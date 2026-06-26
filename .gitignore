@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.VC.db
+
+# Build outputs
+bin/
+bin-int/
+x64/
+Debug/
+Release/
+
+# CMake / intermediate (if any)
+out/
