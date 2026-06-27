@@ -6,6 +6,7 @@
 
 #include "GameEngine/Application.h"
 #include "GameEngine/Core.h"
+#include "GameEngine/Log.h"
 #include "stdio.h"
 
 //Entry point
