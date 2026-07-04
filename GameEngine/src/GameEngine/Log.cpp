@@ -1,3 +1,4 @@
+#include "engpch.h"
 #include "Log.h"
 #include "spdlog/sinks/stdout_color_sinks.h" // Include the correct header for stdout_color_mt
 

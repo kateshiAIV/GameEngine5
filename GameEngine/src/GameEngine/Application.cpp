@@ -1,3 +1,4 @@
+#include "engpch.h"
 #include "Application.h"
 
 #include "GameEngine/Events/ApplicationEvent.h"
@@ -17,7 +18,15 @@ namespace Engine
 	{
 
 		WindowResizeEvent e(1280, 720);
-		ENG_TRACE(e.ToString());
+
+		if (e.IsInCategory(EventCategoryApplication))
+		{
+			ENG_TRACE(e.ToString());
+		}
+		if (e.IsInCategory(EventCategoryInput))
+		{
+			ENG_TRACE(e.ToString());
+		}
 
 		while (true)
 		{

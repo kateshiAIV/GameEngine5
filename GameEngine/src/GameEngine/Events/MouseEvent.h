@@ -1,8 +1,6 @@
 #pragma once
 #include "Event.h"
 
-#include <sstream>
-
 namespace Engine
 {
 	class ENG_API MouseMovedEvent : public Event
