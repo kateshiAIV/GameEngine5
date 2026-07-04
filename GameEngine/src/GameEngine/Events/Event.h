@@ -1,6 +1,6 @@
 #pragma once  
 
-#include "../Core.h" 
+#include "GameEngine/Core.h" 
 
 #include <string>    
 #include <functional>
@@ -9,7 +9,6 @@
 
 namespace Engine
 {
-
 
 	enum class EventType
 	{
