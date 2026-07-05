@@ -35,6 +35,8 @@
       <Filter>GameEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\engpch.h" />
+    <ClInclude Include="src\GameEngine\Window.h" />
+    <ClInclude Include="src\GameEngine\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\GameEngine\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>GameEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\engpch.cpp" />
+    <ClCompile Include="src\GameEngine\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
