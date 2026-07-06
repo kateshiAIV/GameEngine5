@@ -13,6 +13,9 @@
 #include <sstream>
 
 
+#include "GameEngine/Log.h"
+
+
 
 #ifdef ENG_PLATFORM_WINDOWS
 	#include <Windows.h>
