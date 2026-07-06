@@ -62,7 +62,8 @@ project "GameEngine"
 
         postbuildcommands
         {
-            ("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
+            '{MKDIR} "../bin/' .. outputdir .. '/Sandbox"',
+            '{COPY} "%{cfg.buildtarget.abspath}" "../bin/' .. outputdir .. '/Sandbox"'
         }
 
     filter "configurations:Debug"

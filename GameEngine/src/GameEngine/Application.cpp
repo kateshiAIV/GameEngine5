@@ -4,33 +4,27 @@
 #include "GameEngine/Events/ApplicationEvent.h"
 #include "GameEngine/Log.h"
 
+#include <GLFW/glfw3.h>
+
 namespace Engine
 {
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
 	{
+	
 	}
 
 	void Application::Run()
 	{
-
-		WindowResizeEvent e(1280, 720);
-
-		if (e.IsInCategory(EventCategoryApplication))
+		while (m_Running)
 		{
-			ENG_TRACE(e.ToString());
-		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			ENG_TRACE(e.ToString());
-		}
-
-		while (true)
-		{
-			// Update and render the application
+			glClearColor(0.1f, 0.1f, 0.1f, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
 	}
 
