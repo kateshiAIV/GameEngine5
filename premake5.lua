@@ -68,14 +68,17 @@ project "GameEngine"
 
     filter "configurations:Debug"
         defines "ENG_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "ENG_RELEASE"
+        buildoptions "/MD"
         symbols "On"
 
     filter "configurations:Dist"
         defines "ENG_DIST"
+        buildoptions "/MD"
         symbols "On"
 
 
@@ -114,10 +117,13 @@ project "Sandbox"
         }
     filter "configurations:Debug"
         defines "ENG_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     filter "configurations:Release"
         defines "ENG_RELEASE"
+        buildoptions "/MD"
         symbols "On"
     filter "configurations:Dist"
         defines "ENG_DIST"
+        buildoptions "/MD"
         symbols "On"

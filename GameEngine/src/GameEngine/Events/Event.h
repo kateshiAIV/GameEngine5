@@ -52,6 +52,8 @@ namespace Engine
 			return GetCategoryFlags() & category;
 		}
 
+		inline bool Handled() { return m_Handled; }
+
 	protected:
 		bool m_Handled = false;
 	};
@@ -78,6 +80,8 @@ namespace Engine
 			}
 			return false;
 		}
+
+
 	private:
 		Event& m_Event;
 	};
